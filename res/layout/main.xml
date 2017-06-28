@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1">
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" android:layout_weight="0.19"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Войдите"
+            android:gravity="center"
+            android:id="@+id/extractEditText" android:layout_gravity="center_horizontal" android:layout_weight="0.07" android:textSize="24sp"
+            android:autoText="false"/>
+    <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="123dp"
+    >
+        <TextView
+                android:text="Token:"
+                android:id="@+id/extractEditText2" android:layout_weight="0.11" android:layout_row="4" android:textSize="24sp"
+                android:layout_column="1"/>
+        <EditText
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tokenTextField" android:layout_column="2"/>
+    </GridLayout>
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" android:layout_weight="0.32"/>
+    <Button
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:text="Начать"
+            android:id="@+id/startButton" android:layout_gravity="center_horizontal" android:layout_weight="0.11"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Неверный токен"
+              android:id="@+id/wrongToken" android:layout_weight="0.08"
+              android:textSize="15sp" android:autoText="false" android:enabled="false" android:textColor="#ff0008"
+              android:layout_gravity="center_horizontal"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Регистрация"
+              android:id="@+id/registrateButton" android:layout_gravity="center_horizontal" android:layout_weight="0.19"
+              android:textSize="18sp" android:autoText="false"/>
+</LinearLayout>
+

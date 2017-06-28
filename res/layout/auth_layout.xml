@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:weightSum="1">
+    <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="57dp"
+    >
+        <TextView
+                android:layout_width="100dp" android:layout_column="1"
+                android:layout_weight="0.10" android:text="Имя"/>
+        <EditText android:layout_column="2"
+                  android:layout_width="fill_parent"
+                  android:layout_gravity="left"
+                  android:id="@+id/nameField"/>
+    </GridLayout>
+    <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="57dp"
+    >
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" android:layout_weight="0.10" android:text="Пароль"/>
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_gravity="left"
+                android:layout_height="wrap_content"
+                android:id="@+id/passwordField" />
+    </GridLayout>
+    <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="57dp"
+    >
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" android:layout_weight="0.10"
+                android:text="Телефон"/>
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_gravity="left"
+                android:layout_height="wrap_content" android:layout_weight="0.10"
+                android:id="@+id/phoneField"/>
+    </GridLayout>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Выбрать фото"
+            android:id="@+id/photoChooseButton" android:layout_gravity="center_horizontal" android:layout_weight="0.10"/>
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" android:layout_weight="0.44"/>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Войти"
+            android:id="@+id/loginButton" android:layout_weight="0.20"
+            />
+    <TextView android:layout_width="fill_parent" android:gravity="center" android:layout_height="wrap_content" android:layout_weight="0.10"
+              android:text="Уже зарегистрированы?" android:id="@+id/registratedButton" android:layout_gravity="center_horizontal"/>
+</LinearLayout>
